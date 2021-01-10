@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latitude</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-white navbar-black">
+  <a class="navbar-logo" href="index.html">
+    <img src="./Resources/assets/images/LatitudeLogo.png"  alt="logo" style="width:160px;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+          <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+        </div>
+      </li>
+      <li class="nav-item" id="link1">
+        <a class="nav-link" href="comparisons.html">Comparisons</a>
+      </li>
+      <li class="nav-item" id="link2">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="container" style="margin-top:25px">
+    <div class="row">
+      <div class="col-md-8">
+        <section class="sum-img">
+          <h1>Cloudiness</h1>
+          <hr>
+          <section id="desc-img">
+            <img id="desc-img" src="./Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness">
+          </section>
+          <p>Cloud cover (also known as cloudiness, cloudage, or cloud amount) refers to the fraction of 
+            the sky obscured by clouds when observed from a particular location.  The cloud cover is 
+            correlated to the sunshine duration as the least cloudy locales are the sunniest ones while 
+            the cloudiest areas are the least sunny places. 
+            The cloudiness does not appear to change as one approaches the equator (0 Deg Latitude).</p>
+        </section>    
+      </div>
+
+      <div class="col-md-4">
+        <div class="sum-img">
+          <h1>Visualizations</h1>
+          <hr>
+          <div class="vis-img">
+            <a class="maxtemp" href="comparisons.html">
+              <img src="./Resources/assets/images/Fig1.png" alt="Maximum Temperature" style="width:160px"></a>
+
+            <a class="humidity" href="comparisons.html">
+              <img src="./Resources/assets/images/Fig2.png" alt="Humidity" style="width:160px"></a>
+
+            <a class="cloudiness" href="comparisons.html">
+              <img src="./Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:160px"></a>
+
+            <a class="windspeed" href="comparisons.html">
+              <img src="./Resources/assets/images/Fig4.png" alt="Wind Speed" style="width:160px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
